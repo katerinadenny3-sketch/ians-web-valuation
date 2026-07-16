@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your valuation options</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="options-wrapper">
+     <a href="vehicle-confirmation.html" class="back-button">← Back</a>
+
+    <!-- BLUE HEADER -->
+    <div class="options-header">
+        <h1>Your valuation options</h1>
+        <p>Choose what information you’d like to receive.</p>
+    </div>
+
+    <!-- OPTIONS BOXES -->
+    <div class="options-box">
+
+        <!-- OPTION 1 -->
+        <label class="option-card">
+            <input type="radio" name="option" value="valuation-only">
+            <div class="option-content">
+                <h2>Valuation only</h2>
+                <p>No credit checks or data access required.</p>
+            </div>
+        </label>
+
+        <!-- OPTION 2 -->
+        <label class="option-card">
+            <input type="radio" name="option" value="valuation-eligibility-affordability">
+            <div class="option-content">
+                <h2>Valuation + Eligibility + Affordability</h2>
+                <p>Requires a soft credit and affordability assessment (won’t affect your score).</p>
+            </div>
+        </label>
+
+        <!-- OPTION 3 (NOW MATCHING STYLE) -->
+        <label class="option-card">
+            <input type="radio" name="option" value="valuation-eligibility-affordability-finance">
+            <div class="option-content">
+                <h2>Valuation + Eligibility + Affordability + Finance balance</h2>
+                <p>Requires a soft credit, affordability and finance balance check (won’t affect your score).</p>
+            </div>
+        </label>
+
+    </div>
+
+    <!-- CONSENT -->
+    <div class="consent-box" id="consentSection">
+        <label class="consent-label">
+            <input type="checkbox" id="consentCheck">
+            <span>I agree to a soft credit and affordability assessment using secure third‑party data. This will not affect my credit score.</span>
+        </label>
+    </div>
+
+    <button class="continue-button" onclick="goNext()">Continue</button>
+
+</div>
+
+<script src="options-consent.js"></script>
+</body>
+</html>

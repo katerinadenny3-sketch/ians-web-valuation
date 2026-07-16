@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vehicle Equity Check</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="vehicle-check-container">
+      <a href="index.html" class="back-button">← Back to homepage</a>
+
+      <h1>Enter your reg to see your equity</h1>
+      <p class="subtitle">
+        We'll look up your vehicle from DVLA and MOT records. No personal
+        details needed yet.
+      </p>
+
+      <!-- ⭐ NEW: TEST MODE DROPDOWN -->
+      <div class="test-dropdown" style="margin-bottom: 15px;">
+        <label style="font-size: 14px; color: #555;">Select test plate (optional):</label>
+        <select id="regSelect" style="width: 100%; padding: 10px; margin-top: 5px;">
+          <option value="">-- Choose test plate --</option>
+          <option value="SL15NCA">SL15NCA — Finance Test Mode</option>
+          <option value="SL18NCA">SL18NCA — Non‑Finance Test Mode</option>
+        </select>
+      </div>
+
+      <div class="plate-box">
+        <div class="plate">
+          <span class="plate-blue">GB ★</span>
+
+          <!-- ⭐ USER CAN STILL TYPE MANUALLY -->
+          <input
+            type="text"
+            id="regInput"
+            placeholder="AB12 CDE"
+            maxlength="8"
+          />
+        </div>
+      </div>
+
+      <button class="lookup-button" onclick="lookupReg()">
+        Look up my car
+      </button>
+
+      <p class="lookup-info">DVLA & MOT lookup</p>
+
+      <p class="disclaimer">
+        All equity figures are estimates only. Credit assessments are soft
+        searches only and will not affect your credit rating.
+      </p>
+    </div>
+
+    <script src="vehicle-check.js"></script>
+  </body>
+</html>

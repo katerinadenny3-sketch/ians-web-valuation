@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Results</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="results-wrapper">
+
+    <!-- BACK LINK -->
+    <a href="personal-details-eligibility.html" class="back-link">← Back</a>
+
+    <!-- BLUE HEADER -->
+    <div class="results-header">
+        <h1>Your results</h1>
+        <p>Here’s what we found based on your vehicle and the information you provided.</p>
+    </div>
+
+    <!-- VALUATION BOX (WILL BE HIDDEN FOR JOURNEY 3) -->
+    <div class="results-box" id="valuationBox">
+        <h2>Vehicle valuation</h2>
+        <div id="valuationBlock"></div>
+    </div>
+
+    <!-- JOURNEY 3 — FINANCE SECTION -->
+    <div class="results-box" id="financeJourneyBox" style="display:none;">
+
+        <h2>Your estimated equity position</h2>
+
+        <p class="equity-warning">
+            ⚠ <em>This is an estimate — not a final settlement figure. Contact your finance provider for an exact balance.</em>
+        </p>
+
+        <div class="finance-row">
+            <div class="finance-title">Estimated market value</div>
+            <div class="finance-value black">£14,375</div>
+        </div>
+
+        <p class="small-note">
+            <em>Based on make, model, year and mileage · Median of 3,847 listings</em>
+        </p>
+
+        <div class="finance-row">
+            <div class="finance-title">Outstanding finance balance</div>
+            <div class="finance-value red">− £8,860</div>
+        </div>
+        <p class="finance-info-note">
+    If you need to get the settlement details, please see the info button
+    <span class="info-icon" tabindex="0">ℹ</span>
+    <span class="info-tooltip">
+        To speak to our financial advisor, please call 01622 454 353.
+    </span>
+</p>
+    
+
+        <div class="finance-row">
+            <div class="finance-title">Your estimated equity</div>
+            <div class="finance-value green-big">£5,515</div>
+        </div>
+
+        <div class="equity-positive-box">
+            You are in positive equity. This means your car is worth more than you owe — you could use this as a deposit toward your next vehicle.
+        </div>
+
+    </div>
+
+    <!-- FULL ELIGIBILITY + AFFORDABILITY RESULTS -->
+    <div class="results-box" id="fullEligibilityBox" style="display:none;">
+
+        <div class="results-row">
+
+            <div class="results-col">
+                <h3>Credit band</h3>
+                <div class="credit-band">Good</div>
+            </div>
+
+            <div class="results-col affordability-col">
+    <h3>Affordability</h3>
+    <div class="affordability-range">Minimum - £480/mo</div>
+    <em class="affordability-note">For more information, please speak to our finance advisor.</em>
+</div>
+
+
+            <div class="results-col align-right">
+                <h3>Approval likelihood</h3>
+                <div class="approval-pill">High</div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CTA -->
+    <button class="continue-button" onclick="window.location.href='index.html'">
+        Start again →
+    </button>
+
+</div>
+
+<script src="results.js"></script>
+</body>
+</html>

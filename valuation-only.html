@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="details-wrapper">
+
+    <!-- BLUE HEADER -->
+    <div class="details-header">
+        <h1>Your details</h1>
+        <p>We only ask for the information needed for your selected option.</p>
+    </div>
+
+    <!-- FORM BOX -->
+    <div class="details-box">
+
+        <label class="details-label">
+            FIRST NAME
+            <input type="text" id="firstName" required>
+        </label>
+
+        <label class="details-label">
+            LAST NAME
+            <input type="text" id="lastName" required>
+        </label>
+
+        <label class="details-label">
+            EMAIL ADDRESS
+            <input type="email" id="email" required>
+        </label>
+
+        <label class="details-label">
+            MOBILE NUMBER
+            <input type="tel" id="mobile" required>
+        </label>
+
+        <p class="details-note">No additional information is required for a valuation only.</p>
+
+    </div>
+
+    <button class="continue-button" onclick="submitValuationOnly()">Continue</button>
+
+</div>
+
+<script src="valuation-only.js"></script>
+</body>
+</html>

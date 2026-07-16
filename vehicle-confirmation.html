@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Vehicle Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="vehicle-confirm-wrapper">
+
+        <a href="vehicle-check.html" class="back-button">← Back</a>
+
+        <h1>Is this your car?</h1>
+        <p class="subtitle">Pulled from DVLA & MOT records — confirm your mileage to continue.</p>
+
+        <div class="vehicle-confirm-layout">
+
+            <!-- LEFT SIDE -->
+            <div class="vehicle-left">
+                <img src="img/vehicle-placeholder.png" class="vehicle-illustration" alt="Vehicle">
+                <p class="plate-display" id="regPlate"></p>
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="vehicle-right">
+
+                <h2 id="vehicleTitle">2018 Nissan Qashqai E-Power</h2>
+
+                <div class="detail-row"><strong>Colour:</strong> <span id="colour">white</span></div>
+                <div class="detail-row"><strong>Body type:</strong> <span id="body">SUV</span></div>
+                <div class="detail-row"><strong>Fuel:</strong> <span id="fuel">Electric</span></div>
+                <div class="detail-row"><strong>Previous keepers:</strong> <span id="keepers">2</span></div>
+                <div class="detail-row"><strong>MOT status:</strong> <span id="mot">Valid until March 2024</span></div>
+
+            </div>
+
+        </div>
+
+        <!-- MILEAGE -->
+        <div class="mileage-box">
+            <h2>Vehicle mileage</h2>
+            <input type="number" id="mileageInput" placeholder="add your mileage here">
+        </div>
+
+        <!-- CONDITION -->
+        <div class="condition-box">
+    <h2>Vehicle condition</h2>
+
+    <div class="condition-row">
+
+        <label class="condition-option" data-tooltip="Well‑kept car with light wear and no major issues.">
+            <input type="radio" name="condition" value="Good">
+            <span>Good</span>
+        </label>
+
+        <label class="condition-option" data-tooltip="Normal wear with minor cosmetic flaws but mechanically sound.">
+            <input type="radio" name="condition" value="Average">
+            <span>Average</span>
+        </label>
+
+        <label class="condition-option" data-tooltip="Heavy wear with visible damage or mechanical problems.">
+            <input type="radio" name="condition" value="Poor">
+            <span>Poor</span>
+        </label>
+
+    </div>
+
+    <div id="tooltip" class="tooltip"></div>
+</div>
+
+
+        <button class="continue-button" onclick="continueToNext()">Continue</button>
+
+    </div>
+
+    <script src="vehicle-confirmation.js"></script>
+</body>
+</html>

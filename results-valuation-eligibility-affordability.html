@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Results</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="results-wrapper">
+
+    <!-- BACK LINK -->
+    <a href="personal-details-eligibility.html" class="back-link">← Back</a>
+
+    <!-- BLUE HEADER -->
+    <div class="results-header">
+        <h1>Your results</h1>
+        <p>Here’s what we found based on your vehicle and the information you provided.</p>
+    </div>
+
+    <!-- VALUATION BOX -->
+    <div class="results-box">
+        <h2>Vehicle valuation</h2>
+        <div id="valuationBlock"></div>
+    </div>
+
+    <!-- ELIGIBILITY BOX -->
+    <div class="results-box" id="eligibilityBox" style="display:none;">
+        <h2>Eligibility & Affordability</h2>
+        <div id="eligibilityBlock"></div>
+    </div>
+
+    <!-- FINANCE BOX -->
+    <div class="results-box" id="financeBox" style="display:none;">
+        <h2>Outstanding Finance</h2>
+        <div id="financeBlock"></div>
+    </div>
+
+    <!-- CTA -->
+    <button class="continue-button" onclick="window.location.href='index.html'">
+        Start again →
+    </button>
+
+</div>
+
+<script src="results.js"></script>
+</body>
+</html>

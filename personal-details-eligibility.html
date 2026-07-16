@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your details — Eligibility</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="details-wrapper">
+     <a href="options-consent.html" class="back-button">← Back</a>
+
+    <!-- HEADER -->
+    <div class="details-header">
+        <h1>Your details</h1>
+        <p>Valuation + Eligibility + Affordability</p>
+    </div>
+
+    <!-- FORM SECTION 1 -->
+    <div class="details-box">
+
+        <label class="details-label">
+            FIRST NAME
+            <input type="text" id="firstName" required>
+        </label>
+
+        <label class="details-label">
+            LAST NAME
+            <input type="text" id="lastName" required>
+        </label>
+
+        <label class="details-label">
+            EMAIL ADDRESS
+            <input type="email" id="email" required>
+        </label>
+
+        <label class="details-label">
+            MOBILE NUMBER
+            <input type="tel" id="mobile" required>
+        </label>
+
+        <label class="details-label">
+            DATE OF BIRTH
+            <div class="dob-row">
+                <select id="dobDay" required></select>
+                <select id="dobMonth" required></select>
+                <select id="dobYear" required></select>
+            </div>
+        </label>
+
+        <label class="details-label">
+            CURRENT POSTCODE
+            <input type="text" id="currentPostcode" required>
+        </label>
+
+    </div>
+
+    <!-- ADDRESS HISTORY HEADER -->
+    <div class="details-header" style="margin-top:30px;">
+        <h1>3 years address history</h1>
+        <p>Required for credit check — lenders need this to perform a soft credit search.</p>
+    </div>
+
+    <!-- ADDRESS HISTORY BLOCKS -->
+    <div id="addressContainer"></div>
+
+    <button class="add-address-button" id="addAddressBtn">+ Add previous address</button>
+
+    <!-- CONSENTS -->
+    <div class="details-box" style="margin-top:25px;">
+
+        <label class="consent-label">
+            <input type="checkbox" id="consent1" required>
+            <span>I consent to a soft credit search and affordability assessment via Experian. This will not appear on my credit file or affect my credit score.</span>
+        </label>
+
+        <label class="consent-label">
+            <input type="checkbox" id="consent2" required>
+            <span>I agree to my personal data being processed in accordance with Experian's Privacy Policy and the CarCheck Terms of Use.</span>
+        </label>
+
+    </div>
+
+    <!-- CTA BUTTON -->
+    <button class="continue-button" onclick="submitEligibility()">Calculate my equity →</button>
+
+</div>
+
+<script src="personal-details-eligibility.js"></script>
+</body>
+</html>
